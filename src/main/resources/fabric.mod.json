@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "huntcloude",
+  "version": "${version}",
+  "name": "HuntCloude",
+  "description": "Menu pod klawiszem M: SoundCloude (muzyka + napisy z boku), chunki, hitboxy, noclip.",
+  "authors": ["HuntCloude"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.huntcloude.HuntCloudeClient"]
+  },
+  "mixins": [
+    { "config": "huntcloude.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": ">=26.2-",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
